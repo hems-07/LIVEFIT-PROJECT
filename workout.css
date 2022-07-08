@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&display=swap");
+* {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none !important;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+html {
+  overflow-x: hidden;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 8rem;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: var(--tertiary-color);
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #ff5421;
+}
+
+body {
+  background: var(--primary-color);
+}
+
+:root{
+	--primary-color: #1d0e15;
+	--secondary-color: #fff;
+	--tertiary-color: #ccc;
+	--border-color: 0.1rem solid rgba(255, 255, 255, 0.2);
+	--teambg-color : #fff;
+	--teamfont-color: #ff5421;
+	--navg-color: #000;
+}
+
+.light-theme{
+	--primary-color: #fff;
+	--secondary-color: #212121;
+	--tertiary-color: #1a1a1a;
+	--border-color: 0.1rem solid rgba(255,84,33, 0.8);
+	--teambg-color : #ff5421;
+	--teamfont-color: #fff;
+	--navg-color: #fff;
+}
+
+
+section {
+  padding: 3rem 1rem;
+}
+
+.link-btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  background: #ff5421;
+  color: var(--secondary-color);
+  cursor: pointer;
+  border-radius: .5rem;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+}
+
+.link-btn:hover {
+  background: var(--secondary-color);
+  color: #ff5421;
+}
+.heading {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.heading span {
+  font-size: 2.5rem;
+  color: #ff5421;
+}
+
+.heading h3 {
+  font-size: 3.5rem;
+  text-transform: capitalize;
+  color: var(--secondary-color);
+}
+
+.header {
+  background: url(home-bg.jpg) no-repeat;
+  z-index: 1000;
+  padding: 3rem 1rem;
+}
+
+.header.active {
+  background: #fff;
+  padding: 2rem 0;
+}
+
+.header.active .logo {
+  color: #000;
+}
+
+.header.active .nav a {
+  color: #000;
+}
+
+.header.active #menu-btn {
+  color: #000;
+}
+
+.header .logo {
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: bolder;
+}
+
+.header .logo span {
+  color: #ff5421;
+}
+
+.header .nav a {
+  font-size: 2rem;
+  margin-left: 2rem;
+  color: #fff;
+}
+
+.header .nav a:hover {
+  color: #ff5421;
+}
+
+.header #menu-btn {
+  display: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+.start button, .lean button, .body_w button{
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  background: #ff5421;
+  color: #fff;
+  cursor: pointer;
+  border-radius: .5rem;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+}
+
+.start button:hover, .lean button:hover, .body_w button:hover{
+  transition: 0.5s;
+  background: var(--secondary-color);
+  color: #ff5421;
+}
+
+
+.start {
+  background: url(start_bg1.jpg) no-repeat; 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 5rem;
+}
+
+.start span {
+  font-size: 2.5rem;
+  color: #ff5421;
+}
+
+.start h2 {
+  font-size: 3rem;
+  text-transform: capitalize;
+  color: var(--secondary-color);
+  padding-top: 1rem;
+}
+
+.lean {
+  background: url(lean_bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: 1px;
+  background-attachment: fixed;
+  padding-top: 5rem;
+}
+
+.lean span {
+  font-size: 2.5rem;
+  color: #ff5421;
+}
+
+.lean h2 {
+  font-size: 3rem;
+  text-transform: capitalize;
+  color: var(--secondary-color);
+  padding-top: 1rem;
+}
+
+.body_w {
+  background: url(body_w_bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 5rem;
+}
+
+.body_w span {
+  font-size: 2.5rem;
+  color: #ff5421;
+}
+
+.body_w h2 {
+  font-size: 3rem;
+  text-transform: capitalize;
+  color: var(--secondary-color);
+  padding-top: 1rem;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  .home h3 {
+    font-size: 3rem;
+  }
+  .pricing .box-container {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .pricing .box-container .box:nth-child(2) {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .join h3 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 2rem;
+  }
+  .header.active {
+    padding: 2rem;
+  }
+  .header #menu-btn {
+    display: inline-block;
+  }
+  .header #menu-btn.fa-times {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  .header .nav {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background: var(--secondary-color);
+    padding: 1rem 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  .header .nav.active {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .header .nav a {
+    color: #000;
+    margin: 1rem 2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}

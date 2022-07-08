@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <title>login page</title>
+    <link href='https://fonts.googleapis.com/css?family=Iceland' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <style>
+        .container {
+            background-color: #1d0e15;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding-top: 3rem;
+            display: block;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            z-index: -1;
+            height: 45.4vw;
+
+        } 
+
+        .heading {
+            position: absolute;
+            width: 165px;
+            height: 39px;
+            left: 44px;
+            top: 1px;
+
+            font-family: 'Iceland';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 39px;
+            /* identical to box height */
+
+
+            color: #ff5421;
+
+        }
+
+        .form {
+            box-sizing: border-box;
+
+            position: absolute;
+            width: 479px;
+            height: 497px;
+            left: 752px;
+            top: 81px;
+
+            background: linear-gradient(83.46deg, black 1.57%, rgba(353, 196, 196, 0.1) 100%);
+            opacity: 26.5;
+            backdrop-filter: blur(60px);
+            /* Note: backdrop-filter has minimal browser support */
+
+            border-radius: 27px;
+        }
+
+        .form-group {
+            margin-left: 44px;
+            display: flex;
+            flex-direction: column;
+            margin: 8rem 0;
+            height: 148px;
+            color: #fff;
+        }
+
+        .form-label {
+
+
+            font-family: 'Montserrat';
+            margin-left: 44px;
+            font-weight: 400;
+            margin-bottom: 0.3rem;
+
+            color: #FFFFFF;
+        }
+
+        .form-input {
+            width: 405px;
+            box-sizing: border-box;
+            border: none;
+            background: linear-gradient(109.46deg, rgba(201, 201, 201, 0.8) 1.57%, rgba(196, 196, 196, 0.1) 100%);
+            opacity: 0.5;
+            margin-left: 44px;
+            border-radius: 7px;
+            padding: 21px;
+            color: rgb(0,0,0,1 );
+            backdrop-filter: blur(60px);
+            
+        }
+
+        .btn {
+            font-family: 'Iceland';
+            margin-top: -6rem;
+            margin-left: 44px;
+            display: inline-block;
+            padding: 1rem 3rem;
+            background: #ff5421;
+            color: #fff;
+            cursor: pointer;
+            border-radius: .5rem;
+            font-size: 1.8rem;
+            text-transform: capitalize;
+            width: 405px;
+
+        }
+
+        .btn:hover {
+            background: #FFFFFF;
+            color: #ff5421;
+        }
+
+        .signup {
+            margin-left: 50px;
+            
+            font-family: 'Montserrat';
+            font-size: 13px;
+            color: #FFFFFF;
+        }
+        
+        .back {
+            margin-right: 50px;
+            float: right;
+            font-family: 'Montserrat';
+            font-size: 13px;
+            
+        }
+
+        .login-image {
+            height: 586px;
+            margin-left: 65px;
+        }
+
+        a {
+            color: #ff5421;
+        }
+
+        a:hover {
+            color: #FFFFFF;
+        }
+
+        body{
+            margin : 0;
+        }
+    </style>
+    <script>
+        function wrong_pass_alert() {
+            if (document.getElementById('username').value != "" &&
+                document.getElementById('password').value != "") {
+            } else {
+                alert("Please fill all the fields");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <img src="home-img.png" alt="IMG" class="login-image">
+        <div class="form">
+            <h1 class="heading">Login</h1>
+
+            <form action="login.php" method = "POST" target="_parent">
+            <div class="form-group">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" name = "username" id="username" placeholder="Enter your Username" class="form-input"><br>
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" name = "password" id="password" placeholder="Enter your Password" class="form-input">
+                    <br>
+                    <label for="Invalid" style = "color: red" class="form-label">☒ Invalid Username or Password!</label>
+
+            </div>
+                    <button class="btn" onclick="wrong_pass_alert()">Login</button>
+                    <p class="signup">New to Livfit? <a href="signup.htm">signup</a> <a class = "back" href = "index.htm">Back<span> To LIVEFIT</span></a></p>
+                </form>
+        </div>
+
+    </div>
+</body>
+
+</html>

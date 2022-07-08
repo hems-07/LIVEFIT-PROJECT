@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&display=swap");
+* {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none !important;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+html {
+  overflow-x: hidden;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 8rem;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: var(--tertiary-color);
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #ff5421;
+}
+
+body {
+  background: var(--primary-color);
+}
+
+:root{
+	--primary-color: #1d0e15;
+	--secondary-color: #fff;
+	--tertiary-color: #ccc;
+	--border-color: 0.1rem solid rgba(255, 255, 255, 0.2);
+	--teambg-color : #fff;
+	--teamfont-color: #ff5421;
+	--navg-color: #000;
+}
+
+.light-theme{
+	--primary-color: #fff;
+	--secondary-color: #212121;
+	--tertiary-color: #1a1a1a;
+	--border-color: 0.1rem solid rgba(255,84,33, 0.8);
+	--teambg-color : #ff5421;
+	--teamfont-color: #fff;
+	--navg-color: #fff;
+}
+
+
+section {
+  padding: 3rem 1rem;
+}
+
+.link-btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  background: #ff5421;
+  color: var(--secondary-color);
+  cursor: pointer;
+  border-radius: .5rem;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+}
+
+.link-btn:hover {
+  background: var(--secondary-color);
+  color: #ff5421;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.heading span {
+  font-size: 2.5rem;
+  color: #ff5421;
+}
+
+.heading h3 {
+  font-size: 3.5rem;
+  text-transform: capitalize;
+  color: var(--secondary-color);
+}
+
+.header {
+  z-index: 1000;
+  padding: 3rem 1rem;
+}
+
+.header.active {
+  background: var(--secondary-color);
+  padding: 2rem 0;
+}
+
+.header.active .logo {
+  color: var(--navg-color);
+}
+
+.header.active .nav a {
+  color: var(--navg-color);
+}
+
+.header.active #menu-btn {
+  color: #000;
+}
+
+.header .logo {
+  font-size: 2.5rem;
+  color: var(--secondary-color);
+  font-weight: bolder;
+  float: none;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header .logo span {
+  color: #ff5421;
+}
+
+.header .nav a {
+  font-size: 2rem;
+  margin-left: 2rem;
+  color: var(--secondary-color);
+}
+
+.header .nav a:hover {
+  color: #ff5421;
+}
+
+.header #menu-btn {
+  display: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: var(--secondary-color);
+}
+
+
+.start {
+  background: url(../images/home-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 5rem;
+}
+
+.start span {
+  font-size: 2.5rem;
+  color: #ff5421;
+}
+
+.start h2 {
+  font-size: 3rem;
+  text-transform: capitalize;
+  color: var(--secondary-color);
+  padding-top: 1rem;
+}
+
+.lean {
+  background: url(../images/home-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 5rem;
+}
+
+.lean span {
+  font-size: 2.5rem;
+  color: #ff5421;
+}
+
+.lean h2 {
+  font-size: 3rem;
+  text-transform: capitalize;
+  color: var(--secondary-color);
+  padding-top: 1rem;
+}

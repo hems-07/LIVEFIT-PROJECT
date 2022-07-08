@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link href='https://fonts.googleapis.com/css?family=Iceland' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+    <link rel="icon" href="favicon.ico">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- bootstrap cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ICON for d/l -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            background-image: url("success_page.jpg");
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: cover;
+        }
+        .fa-sign-in:before {
+            content: "\f090";
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: inherit;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .fa {
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: 70px;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .cont {
+            background-color: #1d0e15;
+
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+
+        }
+        
+        .begin {
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding-top: 15rem;    
+        }  
+    
+        .begin span {
+            font-size: 3rem;
+            color: rgb(253, 78, 2);
+        }
+    
+        .begin h2 {
+            color: #13dde7;
+            font-size: 43px;
+            margin-left: 8%;
+            margin-top: 3rem;
+            font-family: 'Montserrat';
+            font-style: normal;
+        }
+    
+        .begin span:hover {
+            font-size: 3.5rem;
+        }
+    
+        .begin .container {
+            display: contents; 
+        }
+    
+        .login-btn {
+            font-family: 'Iceland';
+            color: #ff5421;
+            margin-top: 10px;
+            padding: 40px;
+            margin-left: 550px;
+            font-size: 100px;
+        }
+
+        a:hover {
+            color: #FFFFFF;
+        }
+
+        .begin .transbox {
+            margin-top: -5%;
+            margin-left: 25%;
+            text-align: center;
+            border-radius: 10px;
+            height: 320px;
+            width: 110px;
+            background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+            background-color: rgba(209, 153, 179, 0.7);
+        }
+
+        .begin .transbox:hover {
+            border-radius: 10px;
+            height: 380px;
+            background-color: rgba(209, 153, 179, 0.85);
+            opacity: 0.95;
+            transition: 1s;
+        }
+
+        .begin .register{
+            font-size: 95px;
+            margin-left: 45%;
+            margin-top: 8rem;
+            color : rgb(87, 219, 87);
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <section class = "begin" id = "begin">
+    
+        <div class="container">
+            <div class="row align-items-center min-vh-10">
+                
+                <div class = "col-md-6 text-center text-md-left transbox">
+                    <h2>SUCCESSFULLY REGISTERED!</h2>
+                    <i class="fa fa-check-circle-o register" aria-hidden="true"></i>
+                </div>
+
+                <div class="col-md-10">
+                    
+                </div>
+
+                <div class="col-md-10">
+                    <a href="loginpage.htm" class="login-btn" id="log_in">
+                       Login <i class="fa fa-sign-in" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

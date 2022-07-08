@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Livefit-The path to excellence</title>
+  <link rel="icon" href="favicon.ico">
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- bootstrap cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="style.css">
+	
+	<!-- ICON for d/l -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header class="header fixed-top">
+
+   <div class="container">
+
+      <div class="row align-items-center justify-content-between">
+
+         <a href="#" class="logo"><span>LIVE</span>FIT</a>
+
+         <nav class="nav">
+         	
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#courses">Courses</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#team">Team</a>
+            <a href="#blogs">Blogs</a>
+            <a href="#theme"><i class="fa fa-adjust" style="font-size:26px" onclick="myFunction()"></i></a>
+            <a href="login.htm" target="_blank" class="login-btn" id="log_in"><span>Login</span>
+						<svg data-v-0109464a="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="icon">
+						<path data-v-0109464a="" d="M18.996,17.998c-0.002-0.056-0.013-0.108-0.016-0.163c-0.013-0.224-0.034-0.443-0.065-0.661 c-0.013-0.087-0.023-0.174-0.038-0.26c-0.051-0.281-0.112-0.559-0.193-0.827c-0.016-0.051-0.037-0.099-0.053-0.148 c-0.071-0.219-0.151-0.433-0.242-0.642c-0.043-0.1-0.09-0.197-0.138-0.295c-0.077-0.159-0.16-0.314-0.248-0.466 c-0.056-0.095-0.107-0.191-0.167-0.283c-0.137-0.215-0.283-0.423-0.441-0.62c-0.065-0.082-0.139-0.157-0.208-0.236 c-0.11-0.127-0.224-0.252-0.344-0.371c-0.086-0.085-0.174-0.167-0.264-0.248c-0.124-0.111-0.252-0.216-0.384-0.318 c-0.083-0.065-0.164-0.133-0.251-0.194c-0.21-0.148-0.427-0.285-0.652-0.41c-0.021-0.012-0.04-0.027-0.062-0.039 c0.096-0.081,0.184-0.169,0.272-0.257c0.015-0.014,0.03-0.027,0.044-0.042c0.208-0.209,0.395-0.438,0.562-0.681 c0.02-0.028,0.039-0.056,0.058-0.084c0.159-0.241,0.298-0.495,0.414-0.763c0.017-0.036,0.03-0.073,0.045-0.109 c0.11-0.271,0.2-0.551,0.263-0.842c0.007-0.033,0.01-0.066,0.017-0.099C16.963,8.635,17,8.322,17,8c0-2.761-2.239-5-5-5S7,5.239,7,8 c0,0.322,0.037,0.635,0.095,0.94c0.006,0.032,0.01,0.065,0.017,0.098c0.062,0.292,0.152,0.573,0.263,0.845 c0.014,0.035,0.028,0.071,0.043,0.106c0.117,0.269,0.256,0.524,0.416,0.765c0.019,0.028,0.038,0.054,0.056,0.082 c0.168,0.243,0.354,0.472,0.562,0.681c0.016,0.016,0.033,0.029,0.048,0.045c0.088,0.086,0.175,0.174,0.269,0.253 c-0.024,0.013-0.045,0.03-0.069,0.043c-0.225,0.125-0.442,0.263-0.652,0.412c-0.092,0.065-0.178,0.137-0.267,0.207 c-0.132,0.104-0.261,0.211-0.386,0.324c-0.089,0.081-0.177,0.162-0.262,0.247c-0.146,0.146-0.283,0.299-0.416,0.458 c-0.083,0.098-0.161,0.197-0.238,0.301c-0.124,0.164-0.242,0.333-0.352,0.508c-0.059,0.094-0.113,0.188-0.167,0.284 c-0.097,0.172-0.186,0.348-0.269,0.527c-0.038,0.082-0.079,0.161-0.114,0.244c-0.108,0.258-0.202,0.522-0.28,0.795 c-0.021,0.074-0.037,0.151-0.057,0.227c-0.057,0.221-0.103,0.445-0.139,0.673c-0.014,0.087-0.028,0.173-0.039,0.261 C5.025,17.626,5,17.931,5,18.242V20h2v-1.758c0-0.235,0.038-0.459,0.066-0.687c0.019-0.152,0.029-0.307,0.061-0.455 c0.042-0.194,0.106-0.379,0.167-0.564c0.043-0.132,0.078-0.269,0.131-0.396c0.08-0.19,0.183-0.367,0.283-0.546 c0.061-0.107,0.112-0.222,0.179-0.323c0.119-0.18,0.258-0.342,0.397-0.504c0.072-0.085,0.134-0.178,0.211-0.257 c0.153-0.158,0.326-0.293,0.497-0.43c0.081-0.064,0.154-0.14,0.239-0.199c0.182-0.128,0.381-0.229,0.579-0.33 c0.09-0.046,0.172-0.105,0.264-0.146c0.213-0.094,0.439-0.155,0.666-0.218c0.089-0.024,0.172-0.063,0.264-0.083 C11.327,13.037,11.659,13,12,13c2.757,0,5,2.352,5,5.242V20h2v-1.758L18.996,17.998z M12,11c-1.654,0-3-1.346-3-3s1.346-3,3-3 s3,1.346,3,3S13.654,11,12,11z" transform="translate(0, 0)"></path></svg>            
+            </a>
+            
+         </nav>
+
+         <div id="menu-btn" class="fas fa-bars"></div>
+
+      </div>
+
+   </div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+   <div class="container">
+
+      <div class="row align-items-center min-vh-100">
+
+         <div class="col-md-6">
+            <img src="home-img.png" class="w-100" alt="">
+         </div>
+
+         <div class="col-md-6 text-center text-md-left">
+            <span>Back to the gym</span>
+            <h3>Start your fitness journey today</h3>
+            <a href="#" class="link-btn">Get started</a>
+         </div>
+
+      </div>
+
+   </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+   <div class="container">
+
+      <div class="row align-items-center flex-wrap-reverse">
+
+         <div class="col-md-6">
+            <span>About us</span>
+            <h3>Workout daily and Stay Active at Home</h3>
+            <p>Workouts for different levels led by expert fitness coaches. Achieve all your running and training aims in one place.No matter how close you are to achieving your fitness goal, perform at your best with supprt from Livefit</p>
+            <ul>
+               <li> <i class="far fa-check-square"></i> How to Support your Immume System </li>
+               <li> <i class="far fa-check-square"></i>A Guide to 30 Day Fitness & Workout Challenges</li>
+               <li> <i class="far fa-check-square"></i>Guide To Ease Your Back In The Gym</li>
+               <li> <i class="far fa-check-square"></i>The Mental Health Benefits of Exercise in Home</li>
+            </ul>
+         </div>
+
+         <div class="col-md-6">
+            <img src="images/about-img.png" class="w-100" alt="">
+         </div>
+
+      </div>
+
+   </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- counter section starts  -->
+
+<section class="counter">
+
+   <div class="container box-container">
+
+      <div class="box">
+         <h3>20+</h3>
+         <p>Online courses</p>
+      </div>
+
+      <div class="box">
+         <h3>100+</h3>
+         <p>Gym equipments</p>
+      </div>
+
+      <div class="box">
+         <h3>25+</h3>
+         <p>Online instructors</p>
+      </div>
+
+      <div class="box">
+         <h3>500+</h3>
+         <p>Satiesfied clients</p>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- counter section ends -->
+
+<!-- courses section starts  -->
+
+<section class="courses" id="courses">
+
+   <div class="heading">
+      <span>Our courses</span>
+      <h3>Latest courses</h3>
+   </div>
+
+   <div class="box-container container">
+
+      <div class="box">
+         <div class="image">
+            <img src="img-1.jpg" alt="">
+         </div>
+         <div class="content">
+            <div class="icons">
+               <span> <i class="fas fa-calendar"></i> mon - fri </span>
+               <span> <i class="fas fa-clock"></i> 3 hours </span>
+            </div>
+            <h3>Weight lifting and Calisthenics</h3>
+            <a href="#" class="link-btn">read more</a>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="img-2.jpg" alt="">
+         </div>
+         <div class="content">
+            <div class="icons">
+               <span> <i class="fas fa-calendar"></i> mon - sat </span>
+               <span> <i class="fas fa-clock"></i> 2 hours </span>
+            </div>
+            <h3>Stability Training</h3>
+            <a href="#" class="link-btn">read more</a>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="img-3.jpg" alt="">
+         </div>
+         <div class="content">
+            <div class="icons">
+               <span> <i class="fas fa-calendar"></i> mon - sun </span>
+               <span> <i class="fas fa-clock"></i> 2 hours </span>
+            </div>
+            <h3>Bodyweight burn</h3>
+            <a href="#" class="link-btn">read more</a>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="img-4.jpg" alt="">
+         </div>
+         <div class="content">
+            <div class="icons">
+               <span> <i class="fas fa-calendar"></i> mon - sat </span>
+               <span> <i class="fas fa-clock"></i> 2 hours </span>
+            </div>
+            <h3>Toned abs in 6 weeks</h3>
+            <a href="#" class="link-btn">read more</a>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="img-5.jpg" alt="">
+         </div>
+         <div class="content">
+            <div class="icons">
+               <span> <i class="fas fa-calendar"></i> mon - sun </span>
+               <span> <i class="fas fa-clock"></i> 2 hours </span>
+            </div>
+            <h3>Legs and Glutes</h3>
+            <a href="#" class="link-btn">read more</a>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="img-6.jpg" alt="">
+         </div>
+         <div class="content">
+            <div class="icons">
+               <span> <i class="fas fa-calendar"></i> mon - fri </span>
+               <span> <i class="fas fa-clock"></i> 3 hours </span>
+            </div>
+            <h3>Strength and Conditioning</h3>
+            <a href="#" class="link-btn">read more</a>
+         </div>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- courses section ends -->
+
+<!-- pricint section starts  -->
+
+<section class="pricing" id="pricing">
+
+   <div class="heading">
+
+      <h3>Find your perfect plan</h3>
+   </div>
+
+   <div class="box-container container">
+
+      <div class="box">
+         <h3>Basic plan</h3>
+         <div class="price"><span>$</span>40<span>/mo</span></div>
+         <a href="#" class="link-btn">Choose the plan</a>
+         <div class="list">
+            <p> <i class="fas fa-check"></i> Personal training </p>
+            <p> <i class="fas fa-check"></i> Access to personal trainers </p>
+            <p> <i class="fas fa-check"></i> Access to all gym equipments</p>
+            <p> <i class="fas fa-times"></i> Protien powder </p>
+            <p> <i class="fas fa-times"></i> Membership </p>
+         </div>
+      </div>
+
+      <div class="box">
+         <h3>Premium plan</h3>
+         <div class="price"><span>$</span>60<span>/mo</span></div>
+         <a href="#" class="link-btn">Choose the plan</a>
+         <div class="list">
+            <p> <i class="fas fa-check"></i> Personal training </p>
+            <p> <i class="fas fa-check"></i> Access to personal trainers</p>
+            <p> <i class="fas fa-check"></i> Access to all gym equipments</p>
+            <p> <i class="fas fa-check"></i> Protien powder </p>
+            <p> <i class="fas fa-times"></i> Membership </p>
+         </div>
+      </div>
+
+      <div class="box">
+         <h3>Ultimate plan</h3>
+         <div class="price"><span>$</span>80<span>/mo</span></div>
+         <a href="#" class="link-btn">Choose the plan</a>
+         <div class="list">
+            <p> <i class="fas fa-check"></i>Personal training </p>
+            <p> <i class="fas fa-check"></i> Access to personal trainers </p>
+            <p> <i class="fas fa-check"></i> Access to all gym equipments</p>
+            <p> <i class="fas fa-check"></i> Protien powder </p>
+            <p> <i class="fas fa-check"></i> Membership </p>
+         </div>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- pricint section ends -->
+
+<!-- join us section starts  -->
+
+<section class="join">
+
+   <div class="container">
+
+      <div class="row align-items-center">
+         <div class="col-md-7">
+            <img src="join-us-image.png" class="w-100" alt="">
+         </div>
+         <div class="col-md-5 text-center text-md-left">
+            <span>Join us now</span>
+            <h3>Join us & get upto 50% off</h3>
+            <p>Start training with a personal plan that guides you while adjusting to your progress, schedule and other activities. With Livefit, you get access to multiple training plans. Whether you have access to a full gym or are training from the comfort of your home, there's a routine that fits you and your schedule so that you can reach your goals.</p>
+            <a href="#" class="link-btn">Grab your membership now</a>
+         </div>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- join us section ends -->
+
+<!-- team section starts  -->
+
+<section class="team" id="team">
+
+   <div class="heading">
+      <span>Our team</span>
+      <h3>Meet the expert team</h3>
+   </div>
+
+   <div class="box-container container">
+
+      <div class="box">
+         <img src="woman.jpg" alt="">
+         <div class="content">
+            <span>Trainer 1</span>
+            <h3>Jane</h3>
+         </div>
+         <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+         </div>
+      </div>
+
+      <div class="box">
+         <img src="team-2.jpg" alt="">
+         <div class="content">
+            <span>Trainer 2</span>
+            <h3>Thiago</h3>
+         </div>
+         <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+         </div>
+      </div>
+
+      <div class="box">
+         <img src="team-3.jpg" alt="">
+         <div class="content">
+            <span>Trainer 3</span>
+            <h3>Nancy</h3>
+         </div>
+         <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+         </div>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- team section ends -->
+
+<!-- blogs section starts  -->
+
+<section class="blogs" id="blogs">
+
+   <div class="heading">
+      <span>Our blogs</span>
+      <h3>Our daily posts</h3>
+   </div>
+
+   <div class="box-container container">
+
+      <div class="box">
+         <div class="image">
+            <img src="abs.jpg" alt="">
+         </div>
+         <div class="content">
+            <a href="https://www.coachmag.co.uk/fitness/leg-exercises" target = "_blank" class="link">Power up</a>
+            <div class="icons">
+               <span> <i class="fas fa-calendar"></i>
+							<script type="text/javascript">
+							var today = new Date();
+							var dd = String(today.getDate()).padStart(2, '0');
+							var mm = String(today.getMonth() + 1).padStart(2, '0');
+							var yyyy = today.getFullYear();
+
+							today = mm + '/' + dd + '/' + yyyy;
+							document.write(today);
+						</script>               
+               </span>
+               <span> <i class="fas fa-user"></i> By Admin </span>
+            </div>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="weights.jpg" alt="">
+         </div>
+         <div class="content">
+            <a href="https://medium.com/science-for-life/the-best-way-to-burn-belly-fat-and-easily-achieve-a-fantastic-body-1af06a6c5922" 
+            	target = "_blank" class="link">Burn fat</a>
+            <div class="icons">
+               <span> <i class="fas fa-calendar"></i>
+							<script type="text/javascript">
+							var today = new Date();
+							var dd = String(today.getDate()).padStart(2, '0');
+							var mm = String(today.getMonth() + 1).padStart(2, '0');
+							var yyyy = today.getFullYear();
+
+							today = mm + '/' + dd + '/' + yyyy;
+							document.write(today);
+						</script>               
+               </span>
+               <span> <i class="fas fa-user"></i> By Admin </span>
+            </div>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="pull.jpg" alt="">
+         </div>
+         <div class="content">
+            <a href="https://medium.com/@littlequotesite/abs-workout-routine-83d85395cf9a" target = "_blank" class="link">Weight loss starter</a>
+            <div class="icons">
+               <span> <i class="fas fa-calendar"></i> 
+						<script type="text/javascript">
+							var today = new Date();
+							var dd = String(today.getDate()).padStart(2, '0');
+							var mm = String(today.getMonth() + 1).padStart(2, '0');
+							var yyyy = today.getFullYear();
+
+							today = mm + '/' + dd + '/' + yyyy;
+							document.write(today);
+						</script>               
+                </span>
+               <span> <i class="fas fa-user"></i> By Admin </span>
+            </div>
+         </div>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- blogs section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+   <div class="box-container container">
+
+      <div class="box">
+         <h3>quick links</h3>
+         <a href="#home"> <i class="fas fa-angle-right"></i> Home</a>
+         <a href="#about"> <i class="fas fa-angle-right"></i> About</a>
+         <a href="#courses"> <i class="fas fa-angle-right"></i> Courses</a>
+         <a href="#pricing"> <i class="fas fa-angle-right"></i> Pricing</a>
+         <a href="#team"> <i class="fas fa-angle-right"></i> Team</a>
+         <a href="#blogs"> <i class="fas fa-angle-right"></i> Blogs</a>
+      </div>
+
+      <div class="box">
+         <h3>Contact info</h3>
+         <a href="#"> <i class="fas fa-phone"></i> +91 6356843093 </a>
+         <a href="#"> <i class="fas fa-phone"></i> +91 3472047625 </a>
+         <a href="#"> <i class="fas fa-envelope"></i> livefit78@gmail.com </a>
+         <a href="#"> <i class="fas fa-map"></i> Chennai, India -600000 </a>
+      </div>
+
+      <div class="box">
+         <h3>Follow us</h3>
+         <a href="#"> <i class="fab fa-facebook-f"></i> Facebook </a>
+         <a href="#"> <i class="fab fa-twitter"></i> Twitter </a>
+         <a href="#"> <i class="fab fa-instagram"></i> Instagram </a>
+         <a href="#"> <i class="fab fa-linkedin"></i> Linkedin </a>
+      </div>
+
+      <div class="box">
+         <h3>Newsletter</h3>
+         <p>Subscribe to our newsletter for latest updates</p>
+         <form action="">
+            <input type="email" name="" placeholder="Enter your email" id="" class="email">
+            <input type="submit" value="subscribe" class="link-btn">
+         </form>
+      </div>
+
+   </div>
+
+
+
+</section>
+
+<!-- footer section ends -->
+<script src="script.js"></script>
+
+</body>
+</html>

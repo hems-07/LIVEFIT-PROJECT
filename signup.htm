@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <title>Sign Up</title>
+    <link href='https://fonts.googleapis.com/css?family=Iceland' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <style>
+        .container1 {
+            background-color: #1d0e15;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding-top: 3rem;
+            display: block;
+            z-index: -1;
+            height: 45.4vw;
+
+        }
+        .heading {
+            position: absolute;
+            width: 165px;
+            height: 39px;
+            left: 44px;
+            top: 1px;
+
+            font-family: 'Iceland';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 47px;
+            line-height: 17px;
+            /* identical to box height */
+
+
+            color: #ff5421;
+
+        }
+
+        .form {
+            box-sizing: border-box;
+
+            position: absolute;
+            width: 479px;
+            height: 510px;
+            left: 190px;
+            top: 81px;
+
+            background: linear-gradient(83.46deg, black 1.57%, rgba(353, 196, 196, 0.1) 100%);
+            opacity: 26.5;
+            backdrop-filter: blur(60px);
+
+            border-radius: 27px;
+        }
+
+        .form2 {
+            box-sizing: border-box;
+
+            position: absolute;
+            width: 479px;
+            height: 510px;
+            left: 840px;
+            top: 81px;
+
+            background: linear-gradient(83.46deg, black 1.57%, rgba(353, 196, 196, 0.1) 100%);
+            opacity: 26.5;
+            backdrop-filter: blur(60px);
+
+            border-radius: 27px;
+        }
+
+        .form-group {
+            margin-left: 44px;
+            display: flex;
+            flex-direction: column;
+            margin: 6rem 0;
+            margin-bottom: 20px;
+            height: 148px;
+        }
+
+        .form-group2 {
+            margin-left: 44px;
+            display: flex;
+            flex-direction: column;
+            margin: 1rem 0;
+            height: 407px;
+        }
+
+        .form-label {
+            font-family: 'Montserrat';
+            margin-left: 44px;
+            font-weight: 400;
+            margin-bottom: 0.3rem;
+            color: #FFFFFF;
+        }
+
+        .form-input {
+            width: 405px;
+            box-sizing: border-box;
+            border: none;
+            background: linear-gradient(109.46deg, rgba(201, 201, 201, 0.8) 1.57%, rgba(196, 196, 196, 0.1) 100%);
+            opacity: 0.5;
+            margin-left: 44px;
+            border-radius: 7px;
+            padding: 21px;
+            color: rgb( 0, 0, 0,1);
+            backdrop-filter: blur(60px);
+
+            
+        }
+
+        .btn {
+            font-family: 'Iceland';
+            margin-top: -6rem;
+            margin-left: 44px;
+            display: inline-block;
+            padding: 1rem 3rem;
+            background: #ff5421;
+            color: #fff;
+            cursor: pointer;
+            border-radius: .5rem;
+            font-size: 1.8rem;
+            text-transform: capitalize;
+            width: 405px;
+
+        }
+
+        .btn:hover {
+            background: #FFFFFF;
+            color: #ff5421;
+        }
+
+        
+        .signup {
+            margin-left: 50px;
+            margin-bottom: 20px;
+            font-family: 'Montserrat';
+            font-size: 13px;
+            color: #FFFFFF;
+        }
+        
+        .back {
+            margin-right: 50px;
+            float: right;
+            font-family: 'Montserrat';
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+        .login-image {
+            height: 586px;
+            margin-left: 65px;
+        }
+
+        a {
+            color: #ff5421;
+        }
+
+        a:hover {
+            color: #FFFFFF;
+        }
+
+        #wrong_pass_alert {
+            margin-left: 44px;
+            font-family: 'Montserrat';
+            line-height: 0.5;
+
+        }
+        body{
+            margin : 0;
+        }
+    </style>
+    <script>
+
+        function validate_password() {
+
+            var pass = document.getElementById('pass').value;
+            var confirm_pass = document.getElementById('confirm_pass').value;
+            if (pass != confirm_pass) {
+                document.getElementById('wrong_pass_alert').style.color = 'red';
+                document.getElementById('wrong_pass_alert').innerHTML
+                    = '☒ Use same password';
+                document.getElementById('create').disabled = true;
+                document.getElementById('create').style.opacity = (0.4);
+            } else {
+                document.getElementById('wrong_pass_alert').style.color = 'green';
+                document.getElementById('wrong_pass_alert').innerHTML =
+                    '🗹 Password Matched';
+                document.getElementById('create').disabled = false;
+                document.getElementById('create').style.opacity = (1);
+            }
+        }
+        function wrong_pass_alert() {
+            if (document.getElementById('pass').value != "" &&
+                document.getElementById('confirm_pass').value != "" && document.getElementById('Name').value != ""
+                && document.getElementById('Email').value != "" && document.getElementById('age').value != ""
+                && document.getElementById('gender').value != "" && document.getElementById('Height').value != ""
+                && document.getElementById('Weight').value != "") {
+                    
+            } else {
+                alert("Please fill all the fields");
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <form action = "signinpage.php" method = "POST">
+    <div class="container1">
+        <div class="form">
+            <h1 class="heading">Sign up</h1>
+
+            <div class="form-group">
+
+                <label for="Name" class="form-label">Name</label>
+                <input type="text" name = "Name" id="Name" placeholder="Enter your Name" class="form-input" required><br>
+                <label for="Email id" class="form-label">Email id</label>
+                <input type="email" name = "Email" id="Email" placeholder="Enter your Email id" class="form-input" required><br>
+                <label for="pass" class="form-label">Password</label>
+                <input type="password" name = "password" id="pass" placeholder="Enter your password" class="form-input" required><br>
+                <label for="confirm_pass" class="form-label">Confirm Password</label>
+                <input type="password" id="confirm_pass" placeholder="Confirm your Password" class="form-input"
+                    onkeyup="validate_password()" required>
+                <p id='wrong_pass_alert'></p>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div>
+        <div class="form2">
+
+            <div class="form-group2">
+
+                <label for="age" class="form-label">Age</label>
+                <input type="text" name = "age" id="age" placeholder="Enter your Age" class="form-input" required><br>
+                <label for="gender" class="form-label">Gender</label>
+                <select name="gender" name = "gender" id="gender" class="form-input" placeholder="Select your Gender">
+
+                    <option value="Male" selected>Male</option>
+                    <option value="Female" selected>Female</option>
+                    <option value="Other" selected>Other</option>
+                </select><br>
+                <label for="Height" class="form-label">Height</label>
+                <input type="text" name = "Height" id="Height" placeholder="Enter your Height" class="form-input" required><br>
+                <label for="Weight" class="form-label">Weight</label>
+                <input type="text" name = "Weight" id="Weight" placeholder="Enter your Weight" class="form-input" required><br>
+
+
+            </div>
+            <button class="btn" id="create">Sign up</button>
+            <p class="signup">Already a member?<a href="loginpage.htm">LOGIN</a> <a class = "back" href = "index.htm">Back<span> To LIVEFIT</span></a></p>
+        </div>
+
+    </div>
+</form>
+</body>
+
+</html>
+
+
